@@ -1,0 +1,29 @@
+# plugin properties:
+plugin.nashornwrapper.NashornFuncWrapperPlugin.name=Nashorn Wrapper
+plugin.nashornwrapper.NashornFuncWrapperPlugin.author=ZiKr
+plugin.nashornwrapper.NashornFuncWrapperPlugin.version=0.5
+plugin.nashornwrapper.NashornFuncWrapperPlugin.activate=defer
+
+# dependencies:
+plugin.nashornwrapper.NashornFuncWrapperPlugin.depend.0=jdk 1.8
+plugin.nashornwrapper.NashornFuncWrapperPlugin.depend.1=jedit 05.04.00.00
+plugin.nashornwrapper.NashornFuncWrapperPlugin.depend.2=plugin javascriptshell.JavaScriptShellPlugin 0.5
+
+# plugin HELP:
+plugin.nashornwrapper.NashornFuncWrapperPlugin.docs=docs/index.html
+# text appearing at the bottom of "Plugin Manager" window:
+plugin.nashornwrapper.NashornFuncWrapperPlugin.description=Plugin shows the Nashorn script function wrapped as the jEdit plugin.
+
+# menu settings:
+plugin.nashornwrapper.NashornFuncWrapperPlugin.menu-item=nashornfuncwrapper
+nashornfuncwrapper.label=Nashorn Wrapped
+
+# Options:
+plugin.nashornwrapper.NashornFuncWrapperPlugin.option-pane=nashorn-wrapper
+options.nashorn-wrapper.label=Nashorn Wrapped
+options.nashorn-wrapper.code=new nashornwrapper.NashornFuncWrapperOptionPane();
+# empty string when plugin starts the first time:
+options.nashorn-wrapper.dockable-title=
+# default title showing on plugin's dockable window:
+nashornfuncwrapper.title=Nashorn Wrapper
+

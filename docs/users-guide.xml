@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><book>
+	<bookinfo>
+		<title>Nashorn Wrapper</title>
+		<author>
+			<personname id="pn1">
+				<firstname>Zigmantas</firstname><surname>Kry&#382;ius</surname>
+			</personname>
+		</author>
+	</bookinfo>
+	<chapter id="overview"><title>Overview</title>
+		<para>
+			The Nashorn Wrapper Plugin (<code>NashornFuncWrapper.jar</code>) is a demo plugin showing how a Nashorn script can be rendered into
+			a jEdit plugin. The main part of the plugin's function is coded as a Nashorn script.
+		</para>
+		<para>
+			The Nashorn script <code>script_for_demo_plugin.js</code> comes with the plugin. For the plugin's start, this script should
+			be placed in the subfolder <code>scripts</code> of the jEdit settings folder.
+		</para>
+		<para>
+			For more details on use of Nashorn script in Java code, see
+			 <ulink id="tutorial" type="http" url="http://winterbe.com/posts/2014/04/05/java8-nashorn-tutorial/">http://winterbe.com/posts/2014/04/05/java8-nashorn-tutorial/</ulink>or elsewhere.
+		</para>
+	</chapter>
+	<chapter id="use"><title>Use</title>
+		<para>
+			This plugin is for a (self-)educational purpose. The accompanying Nashorn script provides two functions, <code>demoBorder </code>and
+			 <code>demoScroller</code>,  that can be wrapped into a jEdit Plugin.
+		</para>
+		<para>
+			Via the plugin's options, the user can change the path to the demo script or employ other Nashorn scripts and functions provided by them. The plugin code can be cloned to obtain more than one Nashorn wrapper plugin under different names and with different functionality.
+		</para>
+		<para>
+			When writing Nashorn script for a jEdit plugin, the main idea is that a function in a script returns a Java JPanel like object which aferwards is added to the plugins
+			[...]PluginPanel.
+		</para>
+	</chapter>
+	<chapter id="use"><title>Contact</title>
+		<para>
+			Author's contact: <email id="email">zigmas.kr@gmail.com</email>.
+		</para>
+	</chapter>
+</book>

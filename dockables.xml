@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE DOCKABLES SYSTEM "dockables.dtd">
+<!--  -->
+<DOCKABLES>
+	<DOCKABLE NAME="nashornfuncwrapper">
+		if (!jEdit.getProperty("options.nashorn-wrapper.dockable-title").equals("")) {
+			jEdit.setProperty("nashornfuncwrapper.title", jEdit.getProperty("options.nashorn-wrapper.dockable-title"));
+		}
+		new nashornwrapper.NashornFuncWrapperPluginPanel();
+	</DOCKABLE>
+</DOCKABLES>
+
