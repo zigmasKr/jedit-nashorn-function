@@ -15,7 +15,7 @@ import javascriptshell.*;
 
 public class NashornFuncWrapperPluginPanel extends JPanel {
 
-	private String scriptNameDefault = "script_for_demo_plugin.js";
+	private String scriptNameDefault = "nashorn_func_demo.js";
 	private String functionDefault = "demoBorder";
 	private String argDefault = "";
 	private String dockableTitleDefault = jEdit.getProperty("nashornfuncwrapper.title");
@@ -29,7 +29,6 @@ public class NashornFuncWrapperPluginPanel extends JPanel {
 			extends JPanel
 			implements WindowConstants {
 		//
-		private FileReader scriptFileReader;
 		private JavaScriptShell.RetVal scriptEval = null;
 
 		private NashornFuncWrapperPanel() {

@@ -1,6 +1,26 @@
 <?xml version="1.0" ?>
 <project name="NashornFuncWrapper" default="package" basedir=".">
-	<property file="build.properties" />
+
+	<!--
+	https://alvinalexander.com/blog/post/java/how-conditional-operation-ant-script-operating-system
+	https://stackoverflow.com/questions/13553673/conditional-property-in-ant-properties-file?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+	http://www.asjava.com/ant/ant-how-to-get-username-computer-name-and-os-name-in-ant/
+	http://grokbase.com/t/ant/user/018q9c4atm/setting-a-property-based-on-a-condition
+	https://stackoverflow.com/questions/10680982/how-check-for-a-condition-in-ant-and-depending-on-its-value-print-a-message
+	-->
+	<!-- <echo message="${os.name}" /> -->
+	<condition property="os.nickname" value="win">
+		<os family="windows" />
+	</condition>
+	<condition property="os.nickname" value="lin">
+		<os family="unix" />
+	</condition>
+	<condition property="os.nickname" value="mac">
+		<os family="mac" />
+	</condition>
+	<!-- <echo message="os nickname is ${os.nickname}"/> -->
+
+	<property file="build-${os.nickname}.properties" />
 	<!--
 	<property file="../build.properties" />
 	<property file="${user.home}/build.properties" />
