@@ -1,0 +1,29 @@
+# plugin properties:
+plugin.nashornfunct.NashornFunctionPlugin.name=Nashorn Function
+plugin.nashornfunct.NashornFunctionPlugin.author=ZiKr
+plugin.nashornfunct.NashornFunctionPlugin.version=0.5
+plugin.nashornfunct.NashornFunctionPlugin.activate=defer
+
+# dependencies:
+plugin.nashornfunct.NashornFunctionPlugin.depend.0=jdk 1.8
+plugin.nashornfunct.NashornFunctionPlugin.depend.1=jedit 05.04.00.00
+plugin.nashornfunct.NashornFunctionPlugin.depend.2=plugin javascriptshell.JavaScriptShellPlugin 0.5
+
+# plugin HELP:
+plugin.nashornfunct.NashornFunctionPlugin.docs=docs/index.html
+# text appearing at the bottom of "Plugin Manager" window:
+plugin.nashornfunct.NashornFunctionPlugin.description=Plugin shows the Nashorn script function wrapped as the jEdit plugin.
+
+# menu settings:
+plugin.nashornfunct.NashornFunctionPlugin.menu-item=nashornfunction
+nashornfunction.label=Nashorn Function
+
+# Options:
+plugin.nashornfunct.NashornFunctionPlugin.option-pane=nashorn-function
+options.nashorn-function.label=Nashorn Function
+options.nashorn-function.code=new nashornfunct.NashornFunctionOptionPane();
+# empty string when plugin starts the first time:
+options.nashorn-function.dockable-title=
+# default title showing on plugin's dockable window:
+nashornfunction.title=Nashorn Function
+
