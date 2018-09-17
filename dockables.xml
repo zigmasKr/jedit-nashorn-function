@@ -2,11 +2,11 @@
 <!DOCTYPE DOCKABLES SYSTEM "dockables.dtd">
 <!--  -->
 <DOCKABLES>
-	<DOCKABLE NAME="nashornfuncwrapper">
-		if (!jEdit.getProperty("options.nashorn-wrapper.dockable-title").equals("")) {
-			jEdit.setProperty("nashornfuncwrapper.title", jEdit.getProperty("options.nashorn-wrapper.dockable-title"));
+	<DOCKABLE NAME="nashornfunction">
+		if (!jEdit.getProperty("options.nashorn-function.dockable-title").equals("")) {
+			jEdit.setProperty("nashornfunction.title", jEdit.getProperty("options.nashorn-function.dockable-title"));
 		}
-		new nashornwrapper.NashornFuncWrapperPluginPanel();
+		new nashornfunct.NashornFunctionPluginPanel();
 	</DOCKABLE>
 </DOCKABLES>
 

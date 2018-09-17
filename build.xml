@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<project name="NashornFuncWrapper" default="package" basedir=".">
+<project name="NashornFunction" default="package" basedir=".">
 
 	<!--
 	https://alvinalexander.com/blog/post/java/how-conditional-operation-ant-script-operating-system
@@ -34,7 +34,7 @@
 	will be included in the finished jar file. -->
 	<property name="classes.dir" location="classes" />
 	<!-- class name for 'main' to run as application -->
-	<property name="main.class" value="nashornwrapper.NashornWrapper"/>
+	<property name="main.class" value="nashornfunct.NashornFunction"/>
 
 	<!-- Documentation process
 	none: if you supply your own html file as this template does.
@@ -100,7 +100,7 @@
 	<selector id="classesForPlugin">
 		<and>
 			<not>
-				<filename name="nashornwrapper/NashornWrapper.class" />
+				<filename name="nashornfunct/NashornFunction.class" />
 			</not>
 		</and>
 	</selector>

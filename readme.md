@@ -1,15 +1,15 @@
-<h1>NashornWraper plugin</h1>
+<h1>NashornFunction plugin</h1>
 
 <h2>Overview</h2>
-<p>The NashornWrapper plugin is a demo plugin showing how to render a Nashorn script
+<p>The NashornFunction plugin is a demo plugin showing how to render a Nashorn script
 into a jEdit plugin. The principal functionality of the plugin is programmed in some
 Nashorn script's function, and then this function is included into the plugin's Java code via
 JavaScriptShell.runScriptInvocable(...).</p>
 
 <h2>Installation of the plugin</h2>
-<p>The JAR file NashornFuncWrapper.jar should be copied the usual place of jEdit's
+<p>The JAR file NashornFunction.jar should be copied to the usual place of jEdit's
 plugins. This place can be [jEdit application directory]/jars or
-[jEdit settings directory]/jars. The accompanying Nashorn script script_for_demo_plugin.js
+[jEdit settings directory]/jars. The accompanying Nashorn script demo_script_function.js
 is found in the repository subfolder /scripts. This script should be copied into
 [jEdit settings directory]/scripts. This should be enough to start the plugin.
 </p>
@@ -24,6 +24,6 @@ can be selected.
 
 <h2>Extending the plugin</h2>
 <p>To extend or change the functionality of the plugin, one has to include other (useful)
-functions into the script script_for_demo_plugin.js, or write another (useful) Nashorn script,
+functions into the script demo_script_function.js, or write another (useful) Nashorn script,
 and then to configure the plugin in the options panel accordingly.
 </p>
